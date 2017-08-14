@@ -28,6 +28,11 @@ if (isset($_POST['username'], $_POST['password'])) {
                     $_SESSION['username'] =$value['username'];
                     $_SESSION['email'] =$value['email'];
                     $_SESSION['id'] =$value['id'];
+                    $stmt = $pdo->prepare('UPDATE users SET last_login =:last_login WHERE username =:username');
+                    $stmt->execute([
+                      'last_login' => date('Y-m-d H:i'),
+                      'username'   => $_SESSION['username']
+                    ]);
                   }else{
                     echo "username or password incorrect !!!";
                   }
