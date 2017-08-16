@@ -1,4 +1,6 @@
-<?php session_start();
+<?php
+require_once 'navbar.php';
+
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
 ?>
 
