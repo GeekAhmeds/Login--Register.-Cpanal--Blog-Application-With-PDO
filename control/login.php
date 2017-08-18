@@ -23,7 +23,6 @@ if (isset($_POST['username'], $_POST['password'])) {
                 foreach ($stmt->fetchAll() as $value) {
 
                   if (password_verify($password, $value['password'])) {
-                    echo'welcome user';
                     $_SESSION['loggedin'] = true;
                     $_SESSION['username'] =$value['username'];
                     $_SESSION['email'] =$value['email'];
@@ -35,6 +34,7 @@ if (isset($_POST['username'], $_POST['password'])) {
                       'last_login' => date('Y-m-d H:i'),
                       'username'   => $_SESSION['username']
                     ]);
+                      header('refresh:.1; url=../views/index.php');
                   }else{
                     echo "username or password incorrect !!!";
                   }

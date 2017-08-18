@@ -6,7 +6,7 @@
 </head>
 <form class="form-horizontal" action="../control/login.php" method="POST">
 <fieldset>
-<legend></legend
+<legend></legend>
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="username">username</label>
