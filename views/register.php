@@ -1,5 +1,5 @@
 <?php
-require_once 'navbar.php';
+require_once '../inc/navbar.php';
 
  ?>
 <!DOCTYPE html>
@@ -70,3 +70,4 @@ require_once 'navbar.php';
 </script>
 </body>
 </html>
+<?php require_once '../inc/scripts.php'; ?>

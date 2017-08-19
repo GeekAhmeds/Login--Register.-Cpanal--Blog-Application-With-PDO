@@ -34,7 +34,7 @@ if (isset($_POST['username'], $_POST['password'])) {
                       'last_login' => date('Y-m-d H:i'),
                       'username'   => $_SESSION['username']
                     ]);
-                      header('refresh:.1; url=../views/index.php');
+                      header('refresh:.1; url=../control/index.php');
                   }else{
                     echo "username or password incorrect !!!";
                   }

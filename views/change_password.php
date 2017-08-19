@@ -1,5 +1,5 @@
 <?php
-require_once 'navbar.php';
+require_once '../inc/navbar.php';
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
 ?>
@@ -53,3 +53,6 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
   echo 'You Have To Login To Visit This Page';
 }
 ?>
+
+
+<?php require_once '../inc/scripts.php'; ?>

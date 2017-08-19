@@ -1,5 +1,5 @@
 <?php
-require_once 'navbar.php';
+require_once '../inc/navbar.php';
 
  ?>
 <head>
@@ -31,3 +31,5 @@ require_once 'navbar.php';
 
 </fieldset>
 </form>
+
+<?php require_once '../inc/scripts.php'; ?>

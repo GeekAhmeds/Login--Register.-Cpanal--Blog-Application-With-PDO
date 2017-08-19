@@ -1,5 +1,5 @@
 <?php
-require_once 'navbar.php';
+require_once '../inc/navbar.php';
 if (!isset($_SESSION['loggedin']) && empty($_SESSION['loggedin']) ){
     header('refresh:.5; url login.php ');
 
@@ -41,3 +41,5 @@ if (!isset($_SESSION['loggedin']) && empty($_SESSION['loggedin']) ){
           </form>
 
       </div>
+
+<?php require_once '../inc/scripts.php'; ?>

@@ -9,8 +9,6 @@
     <style type="text/css">
 
     </style>
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-default" role="navigation">
@@ -59,7 +57,7 @@
                 case ($_SESSION['privil'] === 1):
 
                 ?>
-                <li><a href="create.php">List Newest Posts</a></li>
+                <li><a href="../control/index.php">List Newest Posts</a></li>
                 <li><a href="create.php">Create A Post</a></li>
 
                 <?php
@@ -92,5 +90,3 @@
 <script type="text/javascript">
 
 </script>
-</body>
-</html>
