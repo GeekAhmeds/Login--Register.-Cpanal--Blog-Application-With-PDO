@@ -32,7 +32,7 @@
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
           <?php
-          session_start();
+            session_start();
           if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
         if (isset($_SESSION['nickname']) && !empty($_SESSION['nickname'])) {
           echo "Hello " . $_SESSION['nickname'] ;
@@ -58,6 +58,7 @@
 
                 ?>
                 <li><a href="../control/index.php">List Newest Posts</a></li>
+                <li><a href="../control/users.php">List Users</a></li>
                 <li><a href="create.php">Create A Post</a></li>
 
                 <?php

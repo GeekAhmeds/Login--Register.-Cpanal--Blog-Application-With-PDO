@@ -14,7 +14,7 @@ if (isset($_POST['submit'], $_POST['body'], $_POST['title']) && !empty($_POST['b
 
       if ($stmt->rowCount()) {
         $_SESSION['successful'] = 'Your Post Has Been Add';
-        header('refresh:.1; url= ../views/create.php');
+        header('refresh:.1; url= ../views/index.php');
         }
       }else {
         $_SESSION['error'] = 'Error Please Check Your Body Field';
